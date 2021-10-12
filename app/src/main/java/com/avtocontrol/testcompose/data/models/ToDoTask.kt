@@ -2,7 +2,7 @@ package com.avtocontrol.testcompose.data.models
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.avtocontrol.testcompose.util.Constans.DATABASE_TABLE
+import com.avtocontrol.testcompose.util.Constants.DATABASE_TABLE
 
 @Entity(tableName = DATABASE_TABLE)
 data class ToDoTask (

@@ -1,6 +1,6 @@
 package com.avtocontrol.testcompose.util
 
-object Constans {
+object Constants {
 
     const val DATABASE_TABLE = "todo_table"
     const val DATABASE_NAME = "todo_database"
