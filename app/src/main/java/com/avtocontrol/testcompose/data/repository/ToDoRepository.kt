@@ -2,9 +2,12 @@ package com.avtocontrol.testcompose.data.repository
 
 import com.avtocontrol.testcompose.data.dao.ToDoDao
 import com.avtocontrol.testcompose.data.models.ToDoTask
+import dagger.hilt.android.scopes.ViewModelScoped
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 
+
+@ViewModelScoped
 class ToDoRepository @Inject constructor(private val toDoDao: ToDoDao) {
 
     val getAllTasks: Flow<List<ToDoTask>> = toDoDao.getAllTasks()
